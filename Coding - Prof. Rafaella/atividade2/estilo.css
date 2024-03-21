@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    background-color: #011235;
+    color: #ffffff;
+}
+
+header {
+    background-color: #ffffff;
+    color: #fff;
+    padding: 20px 0;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #e7e7e7c2;
+}
+
+main {
+    padding: 200px;
+}
+
+.livros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.livro {
+    background-color: rgb(241, 240, 240);
+    color:black;
+    border: 1px solid #000000;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.livro img {
+    width: 250px;
+    height: auto;
+}
+
+footer {
+    background-color: #344b7b;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+}
