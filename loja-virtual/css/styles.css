@@ -1,0 +1,192 @@
+/* Customisando o carrocel*/
+.c-item {
+  height: 480px;
+}
+
+
+/* Animação para mover os itens */
+@keyframes carousel {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); } /* Move todos os itens para a esquerda */
+}
+
+.c-img {
+  height: 100%;
+  object-fit:scale-down;
+}
+
+.card{
+  margin-left: 20px;
+}
+
+.list-unstyled d-flex{
+  margin: 5px;
+}
+/*-----------------------*/
+
+body { 
+  background-image: url( 
+"https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg"); 
+  background-repeat: no-repeat; 
+  background-size: 100%; 
+  background-attachment: fixed;
+}
+
+header {
+  background-color: rgb(255, 255, 255, 0.7);
+}
+
+.products-card {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 40px 25px 40px;
+  justify-content: center;
+}
+
+.card { 
+  box-shadow: 0 0 5px 0;
+  background: inherit !important; 
+  backdrop-filter: blur(10px);
+}
+
+.product {
+  width: 200px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+}
+
+.add-to-cart {
+  background-color: #399696;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.add-to-cart:hover {
+  background-color: #45a049;
+}
+
+/* Modal da sacola de compras */
+.cart-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#cart-total {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+.cart-modal button {
+  margin-top: 10px;
+}
+
+#close-cart {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#checkout-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.remove-button {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.col-md-6 {
+  text-align: justify;
+  font-family: sans-serif;
+}
+
+.id {
+  text-align: justify;
+  font-family: sans-serif;
+}
+
+.star {
+font-size: 20px;
+cursor: pointer;
+}
+
+.star:hover,
+.rated {
+color: gold;
+}
+
+
+
+/* ------------------------------------------------------------- */
+#cartSidebar {
+  position: fixed;
+  right: -300px; /* Escondido inicialmente */
+  top: 95px;
+  height: 100%;
+  width: 300px;
+  background-color: #f8f9fa;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  transition: right 0.3s;
+  border-radius:5px ;
+}
+
+/* Quando a barra lateral estiver visível */
+#cartSidebar.visible {
+  right: 0;
+}
+
+/* Estilo para o botão do carrinho */
+#cartButton {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
